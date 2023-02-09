@@ -30,7 +30,7 @@ div{
 {
   background-color: rgb(51, 48, 48);
   width: 420px;
-  height: 440px;
+  height: 450px;
   
   margin: 0;
   
@@ -39,7 +39,7 @@ div{
 {
   background-color: rgb(12, 13, 26);
   width: 420px;
-  height: 440px;
+  height: 450px;
  
   margin: 0;
   
@@ -83,13 +83,14 @@ div{
 .paragraph
 {
   color: rgb(252, 252, 252);
-  font-family: 'Roboto';
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
   
 }
 .paragraph2
 {
   color: rgb(252, 252, 252);
-  font-family: 'Roboto';
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 13px;
 }
 .dot{

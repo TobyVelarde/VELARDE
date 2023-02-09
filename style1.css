@@ -33,23 +33,27 @@ div{
 }
 .paragraph
 {
-  font-family: 'Roboto';
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
   color:rgb(7, 7, 7);
 }
 .paragraph2
 {
-  font-family: 'Roboto';
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
   color:rgb(255, 255, 255);
 }
 .paragraph3
 {
-  font-family: 'Roboto';
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
   color:rgb(255, 255, 255);
   font-size: 14px;
 }
 .alpha
 {
-  font-family: 'Roboto';
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
   color:rgb(248, 246, 246);
   text-decoration: underline;
 }
