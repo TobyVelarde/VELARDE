@@ -1,211 +1,215 @@
 h1{
-    font-family: 'Roboto';
-    font-weight: bolder;
+  font-family: 'Roboto';
+  font-weight: bolder;
 }
 form{
-    font-family: 'Roboto';
-    font-weight: 900;
+  font-family: 'Roboto';
+  font-weight: 900;
 }
 body{
-    background-color: rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
 }
 div{
-    background-color: rgb(255, 255, 255);
-    width: 880px;
-    height: absolute 710px;
-    padding: 30px 20px 20px 20px;
-    margin: 10px auto;
-    border-radius: 00px;
-}
+  background-color: rgb(255, 255, 255);
+  width: 880px;
+  height: absolute 710px;
+  padding: 30px 20px 20px 20px;
+  margin: 10px auto;
+ 
+  
 
+  border-radius: 00px;
+}
 .container{
-    display: flex;
-    height: 500px;
+  display: flex;
+  height: 500px;
 
 
 }
 .info
 {
-    background-color: rgb(51, 48, 48);
-    width: 420px;
-    height: 440px;
-    margin: 0;
-    
+  background-color: rgb(51, 48, 48);
+  width: 420px;
+  height: 440px;
+  
+  margin: 0;
+  
 }
 .contacts
 {
-    background-color: rgb(12, 13, 26);
-    width: 420px;
-    height: 440px;  
-    margin: 0;
-    
+  background-color: rgb(12, 13, 26);
+  width: 420px;
+  height: 440px;
+ 
+  margin: 0;
+  
 }
 .box{
-    width: 100%;
-    height: 40px;
-    border-radius: 5px;
-    background-color:white;
-    
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  background-color:white;
+  
 }
 .box2{
-    width: 100%;
-    height: 120px;
-    border-radius: 5px;
-    background-color:white;
+  width: 100%;
+  height: 120px;
+  border-radius: 5px;
+  background-color:white;
 }
 .GreenButton{
-    width: 100px;
-    height: 40px;
-    background-color: rgb(8, 3, 32);
-    color: white;
-    border: 0;
-    border-radius: 0px;
+  width: 100px;
+  height: 40px;
+  background-color: rgb(8, 3, 32);
+  color: white;
+  border: 0;
+  border-radius: 0px;
 }
 .RedButton{
-    width: 100px;
-    height: 40px;
-    background-color: rgb(10, 7, 7);
-    color: white;
-    border: 0;
-    border-radius: 0px;
+  width: 100px;
+  height: 40px;
+  background-color: rgb(10, 7, 7);
+  color: white;
+  border: 0;
+  border-radius: 0px;
 }
 .BackButton{
-    width: 100px;
-    height: 25px;
-    background-color: rgb(51, 48, 48);
-    color: rgb(238, 233, 233);
-    border-radius: 5px;
+  width: 100px;
+  height: 25px;
+  background-color: rgb(51, 48, 48);
+  color: rgb(238, 233, 233);
+  border-radius: 5px;
 }
 .paragraph
 {
-    color: rgb(252, 252, 252);
-    font-family: 'Roboto';
-    
+  color: rgb(252, 252, 252);
+  font-family: 'Roboto';
+  
 }
 .paragraph2
 {
-    color: rgb(252, 252, 252);
-    font-family: 'Roboto';
-    font-size: 13px;
+  color: rgb(252, 252, 252);
+  font-family: 'Roboto';
+  font-size: 13px;
 }
 .dot{
-    margin: 10px 10px 10px 10px;
+  margin: 10px 10px 10px 10px;
 }
 .fa {
-    padding: 20px;
-    font-size: 30px;
-    width: 50px;
-    text-align: center;
-    text-decoration: none;
-    margin: 5px 2px;
-  }
-  
-  .fa:hover {
-      opacity: 0.7;
-  }
-  
-  .fa-facebook {
-    background: #3B5998;
-    color: white;
-  }
-  
-  .fa-twitter {
-    background: #55ACEE;
-    color: white;
-  }
-  
-  .fa-google {
-    background: #dd4b39;
-    color: white;
-  }
-  
-  .fa-linkedin {
-    background: #007bb5;
-    color: white;
-  }
-  
-  .fa-youtube {
-    background: #bb0000;
-    color: white;
-  }
-  
-  .fa-instagram {
-    background: #125688;
-    color: white;
-  }
-  
-  .fa-pinterest {
-    background: #cb2027;
-    color: white;
-  }
-  
-  .fa-snapchat-ghost {
-    background: #fffc00;
-    color: white;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-  }
-  
-  .fa-skype {
-    background: #00aff0;
-    color: white;
-  }
-  
-  .fa-android {
-    background: #a4c639;
-    color: white;
-  }
-  
-  .fa-dribbble {
-    background: #ea4c89;
-    color: white;
-  }
-  
-  .fa-vimeo {
-    background: #45bbff;
-    color: white;
-  }
-  
-  .fa-tumblr {
-    background: #2c4762;
-    color: white;
-  }
-  
-  .fa-vine {
-    background: #00b489;
-    color: white;
-  }
-  
-  .fa-foursquare {
-    background: #45bbff;
-    color: white;
-  }
-  
-  .fa-stumbleupon {
-    background: #eb4924;
-    color: white;
-  }
-  
-  .fa-flickr {
-    background: #f40083;
-    color: white;
-  }
-  
-  .fa-yahoo {
-    background: #430297;
-    color: white;
-  }
-  
-  .fa-soundcloud {
-    background: #ff5500;
-    color: white;
-  }
-  
-  .fa-reddit {
-    background: #ff5700;
-    color: white;
-  }
-  
-  .fa-rss {
-    background: #ff6600;
-    color: white;
-  }
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+
+.fa-snapchat-ghost {
+  background: #fffc00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.fa-skype {
+  background: #00aff0;
+  color: white;
+}
+
+.fa-android {
+  background: #a4c639;
+  color: white;
+}
+
+.fa-dribbble {
+  background: #ea4c89;
+  color: white;
+}
+
+.fa-vimeo {
+  background: #45bbff;
+  color: white;
+}
+
+.fa-tumblr {
+  background: #2c4762;
+  color: white;
+}
+
+.fa-vine {
+  background: #00b489;
+  color: white;
+}
+
+.fa-foursquare {
+  background: #45bbff;
+  color: white;
+}
+
+.fa-stumbleupon {
+  background: #eb4924;
+  color: white;
+}
+
+.fa-flickr {
+  background: #f40083;
+  color: white;
+}
+
+.fa-yahoo {
+  background: #430297;
+  color: white;
+}
+
+.fa-soundcloud {
+  background: #ff5500;
+  color: white;
+}
+
+.fa-reddit {
+  background: #ff5700;
+  color: white;
+}
+
+.fa-rss {
+  background: #ff6600;
+  color: white;
+}
