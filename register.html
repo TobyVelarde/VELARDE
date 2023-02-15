@@ -1,88 +1,132 @@
-<html>\
-    <head>
-    <title>Form Activity</title>
-<style>
-    h1{
-        font-family: 'Oswald Regular';
-        font-weight: bolder;
-    }
-    form{
-        font-family: 'Oswald Regular';
-        font-weight: 400;
-    }
-    body{
-        background-color: lightslategrey;
-    }
-    div{
-        background-color: white;
-        width: 280px;
-        height: 710px;
-        padding: 20px 20px 20px 20px;
-        margin: 10px auto;
-        border-radius: 5px;
-    }
-    .box{
-        width: 100%;
-    }
-    .GreenButton{
-        width: 100px;
-        height: 25px;
-        background-color: green;
-        color: white;
-        border: 0;
-    }
-    .RedButton{
-        width: 100px;
-        height: 25px;
-        background-color: red;
-        color: white;
-        border: 0;
-    }
-    .dot{
-        margin: 10px 10px 10px 10px;
-    }
-</style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>registration from</title>
 
-<script>
-    const verifyPassword = () => {
-        const password = document.getElementById("password").innerHTML;
-        if (password.length < 8) {
-            document.getElementById("invalidPass").innerHTML = "TANGINAMO";
+    <style>
+        h1{
+            font-family:'sans-serif';
+            font-weight: bolder;
         }
-    }
-</script>
-
+        form{
+            font-family: 'sans-serif';
+            font-weight: 900;
+        }
+        body{
+            background-color: rgb(3, 3, 3);
+        }
+        div{
+            background-color: rgb(233, 189, 139);
+            width: 580px;
+            height: absolute 710px;
+            padding: 30px 20px 20px 20px;
+            margin: 10px auto;
+            border-radius: 5px;
+        }
+        .box{
+            width: 100%;
+        }
+        .GreenButton{
+            width: 100px;
+            height: 25px;
+            background-color: green;
+            color: white;
+            border: 0;
+        }
+        .RedButton{
+            width: 100px;
+            height: 25px;
+            background-color: red;
+            color: white;
+            border: 0;
+        }
+        .dot{
+            margin: 10px 10px 10px 10px;
+        }
+        
+    </style>
 </head>
-
 <body>
     <div>
-        <form>
-        <h1>Registration Form</h1>
-            First Name:    <br>
-                <input type="text" class="box" name="firstname" fdprocessedid="u24t8"><br>
-            Last Name:     <br>
-                <input type="text" class="box" name="lastname" fdprocessedid="yqh97h"><br>
-            Nick Name:     <br>
-                <input type="text" class="box" name="nickname" fdprocessedid="x6r9vd"><br>
-            Email:         <br>
-                <input type="email" class="box" name="email" fdprocessedid="g89j1"><br>
-            Password:      <br>
-                <input id="password" type="password" class="box" name="password" fdprocessedid="8ulf3h"><br>
-                <span id="invalidPass"></span>
-            Date of Birth: <br>
-                <input type="date" class="box" name="bday"><br>
-            Gender:        <br>
-                <input type="radio" class="dot" name="male" value="male"> Male
-                <input type="radio" class="dot" name="female" value="female"> Female
-                <input type="radio" class="dot" name="other" value="other"> Other <br>
-            Mobile:        <br>
-                <input type="number" class="box" name="mobile" fdprocessedid="scphfg"><br>
-            Address:       <br>
-                <textarea type="address" class="box" value="address" cols="30" rows="10"></textarea><br> 
-            <input type="submit" class="GreenButton" name="submit" value="Submit" fdprocessedid="jytx7r">
-            <input type="reset" class="RedButton" name="reset" value="Reset"><br>
-        </form>
+        <h1><center>Registration Form </center></h1>
+            <form class="form">
+                First Name:
+                <input type="text" class="box" name="firstname"><br><br>
+                
+               Last Name:
+                <input type="text" class="box" name="lastname"><br><br>
+        
+                Nick Name:
+                <input type="text" class="box" name="nickname"><br><br>
+        
+                Email:
+                <input type="email" class="box" name="email"><br><br>
+        
+               Password:
+                <input type="password" class="box" name="pw"><br><br>
+        
+                Date of Birth:
+                <input type="date" class="box" name="bday"><br><br>
+        
+                <label for="gender">Gender:</label><br>
+                
+                    <input id="M" type="radio" name="gender">
+                    <label for="M">Male</label> 
+                    <input id="F" type="radio" name="gender">
+                    <label for="F">Female</label>
+                    <input id="O" type="radio" name="gender">
+                    <label for="O">Other</label><br><br>
+               
+                
+                <label for="mobilenum">Mobile:</label><br>
+                <input type="number" name="mobilenum"><br><br>
+        
+                <label for="">Address:</label><br>
+                <textarea type="address" class="box" value="address" cols="30" rows="10"></textarea><br> <br>
+               
+                    <button class="GreenButton" name="submit" type="submit">Submit</button>
+                    <button class="RedButton" name="reset" type="reset">Reset</button>
+                
+            </form>
     </div>
-    
 
-</body></html>
+</body>
+
+    <script>
+const form = document.querySelector('.form');
+const submitButton = form.querySelector('button[type="submit"]');
+const successMessage = '<p style="color:green">Hooray! Your account has been successfully created.</p>';
+
+submitButton.addEventListener('click', function(event) {
+  event.preventDefault();
+
+  var passwordInput = form.querySelector('input[name="pw"]');
+
+  var bdayInput = form.querySelector('input[name="bday"]');
+
+  var password = passwordInput.value;
+
+  var birth = new Date(bdayInput.value);
+
+  var agecomputation = Date.now() - birth.getTime();
+
+  var ageDate = new Date(agecomputation);
+
+  var age = Math.abs(ageDate.getUTCFullYear() - 1970);
+  
+  if (password.length < 8) {
+    passwordInput.insertAdjacentHTML('afterend', '<p style="color:red">Password must be at least 8 characters.</p>');
+    return;
+  }
+  
+  if (age < 21) {
+    bdayInput.insertAdjacentHTML('afterend', '<p style="color:red">Minors are not allowed!</p>');
+    return;
+  }
+  
+  form.insertAdjacentHTML('beforebegin', successMessage);
+});
+    </script>
+    
+</body>
